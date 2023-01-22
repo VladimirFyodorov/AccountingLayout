@@ -6,3 +6,27 @@
   font-weight: bold;
   text-decoration: underline;
 }
+
+p.comments {
+  color: var(--color-interface);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+button.small-text {
+  font-size: 14px;
+}
+
+button.bold {
+  font-weight: bold;
+  text-align: center;
+}
+
+button.interface {
+  color: var(--color-interface);
+  font-size: 14px;
+}
+
+.links {
+  color: var(--color-call-to-action);
+}
