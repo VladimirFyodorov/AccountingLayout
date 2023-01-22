@@ -18,7 +18,35 @@ html {
 
 body {
   margin: 0;
+  color: var(--color-main);
   font-size: 16px;
   font-family: PTSans, sans-serif;
-  line-height: 1.6em;
+  line-height: 1.295;
+}
+
+h1 {
+  color: var(--color-heading);
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.295;
+}
+
+h2 {
+  color: var(--color-heading);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.295;
+}
+
+h3 {
+  color: var(--color-main);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.295;
+}
+
+p.comments {
+  color: var(--color-interface);
+  font-size: 12px;
+  line-height: 1.4;
 }
