@@ -1,0 +1,13 @@
+:root {
+  --color-main: #3A3A3A;
+  --color-heading: #0B0B0B;
+  --color-outline: #0B0B0B;
+  --color-interface: #717171;
+  --color-active-panel: #E7E7E7;
+  --color-hover: #F5F5F5;
+  --color-call-to-action: #318BDE;
+  --color-active: #2A78C0;
+  --color-error: #DC6466;
+  --color-ok: #079D31;
+  --color-background: #FFFFFF;
+}
