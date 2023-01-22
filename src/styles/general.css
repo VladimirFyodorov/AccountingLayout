@@ -1,0 +1,12 @@
+html {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: OpenSans, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: OpenSans, sans-serif;
+  line-height: 1.6em;
+}
