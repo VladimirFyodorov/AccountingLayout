@@ -4,7 +4,6 @@
   "description": "",
   "main": "src/pages/login.html",
   "scripts": {
-    "install": "npm install",
     "lint": "npm run stylelint1 & npm run stylelint2 & npm run htmlhint",
     "stylelint1": "npx stylelint ./src/styles/*.css",
     "stylelint2": "npx stylelint ./src/styles/*/*.css",
