@@ -4,13 +4,8 @@
   "description": "",
   "main": "src/pages/login.html",
   "scripts": {
-    "lint": "npm run stylelint1 & npm run stylelint2 & npm run htmlhint",
-    "lint-fix": "npm run stylelint1-fix & npm run stylelint2-fix",
-    "stylelint1": "npx stylelint ./src/styles/*.css",
-    "stylelint2": "npx stylelint ./src/styles/*/*.css",
-    "stylelint1-fix": "npx stylelint ./src/styles/*.css --fix",
-    "stylelint2-fix": "npx stylelint ./src/styles/*/*.css --fix",
-    "htmlhint": "npx htmlhint ./src/pages/*.html"
+    "lint": "make lint",
+    "lint-fix": "make lint-fix"
   },
   "repository": {
     "type": "git",
