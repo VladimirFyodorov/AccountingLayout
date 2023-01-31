@@ -30,18 +30,6 @@ form.email-checked > div.for-check-mark::after {
   content: "";
 }
 
-form.login > h1 {
-  margin: 0 0 20px;
-}
-
-form.login > h2 {
-  margin: 0;
-}
-
-form.login > p {
-  margin: 0 0 40px;
-}
-
 form.login > label {
   display: block;
 }
@@ -83,7 +71,7 @@ form.login > button {
   }
 }
 
-form.login > article {
+form.login > article.user-data {
   display: flex;
   align-items: center;
 
@@ -101,4 +89,26 @@ form.login > article {
   margin-right: 10px;
   border: 1px solid black;
   border-radius: 50%;
+}
+
+form.login > section.inputs-in-one-row {
+  display: flex;
+}
+
+form.login > section.inputs-in-one-row > div {
+  flex-grow: 1;
+}
+
+form.login > section.inputs-in-one-row > div:first-child {
+  margin-right: 35px;
+}
+
+@media (max-width: 400px) {
+  form.login > section.inputs-in-one-row {
+    display: block;
+  }
+
+  form.login > section.inputs-in-one-row > div:first-child {
+    margin-right: 0;
+  }
 }
