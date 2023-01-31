@@ -1,0 +1,21 @@
+form.login > section.inputs-in-one-row {
+  display: flex;
+}
+
+form.login > section.inputs-in-one-row > div {
+  flex-grow: 1;
+}
+
+form.login > section.inputs-in-one-row > div:first-child {
+  margin-right: 35px;
+}
+
+@media (max-width: 400px) {
+  form.login > section.inputs-in-one-row {
+    display: block;
+  }
+
+  form.login > section.inputs-in-one-row > div:first-child {
+    margin-right: 0;
+  }
+}

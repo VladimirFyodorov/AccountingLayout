@@ -1,3 +1,7 @@
+@import "./EmailForm.css";
+@import "./PasswordForm.css";
+@import "./CreateUserForm.css";
+
 form.login {
   display: flex;
   flex-direction: column;
@@ -68,47 +72,5 @@ form.login > button {
 
   form.login > button {
     width: 100%;
-  }
-}
-
-form.login > article.user-data {
-  display: flex;
-  align-items: center;
-
-  margin-bottom: 40px;
-}
-
-.user-circle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  box-sizing: border-box;
-  width: 55px;
-  height: 55px;
-  margin-right: 10px;
-  border: 1px solid black;
-  border-radius: 50%;
-}
-
-form.login > section.inputs-in-one-row {
-  display: flex;
-}
-
-form.login > section.inputs-in-one-row > div {
-  flex-grow: 1;
-}
-
-form.login > section.inputs-in-one-row > div:first-child {
-  margin-right: 35px;
-}
-
-@media (max-width: 400px) {
-  form.login > section.inputs-in-one-row {
-    display: block;
-  }
-
-  form.login > section.inputs-in-one-row > div:first-child {
-    margin-right: 0;
   }
 }

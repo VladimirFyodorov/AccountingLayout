@@ -5,4 +5,4 @@
 @import "./kit/special-elements.css";
 @import "./kit/positioning.css";
 @import "./footer.css";
-@import "./pageComponents/login.css";
+@import "./pageComponents/LoginPage/index.css";
