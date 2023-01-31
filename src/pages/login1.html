@@ -7,16 +7,26 @@
     <link rel="icon" type="image/png" href="../images/logo.png"/>
     <link rel="stylesheet" href="../styles/index.css">
     <title>Accounting</title>
+    <script>
+        function fakeSubmit(e) {
+            e.preventDefault();
+            window.location.href = '/src/pages/login2.html';
+        };
+
+        function fakeValidation(e) {
+            e.target.closest('form').classList.add('email-checked');
+        }
+    </script>
 </head>
 <body>
     <main class="main-wo-header">
-        <form class="login email-checked">
+        <form class="login" onsubmit="fakeSubmit(event)">
             <h1>Sign in</h1>
             <h2>Continue with email</h2>
             <p>New user? <a class="link avoid-break" href="#">Create an account</a></p>
             <label class="interface" for="input">Email address</label>
             <div class="for-check-mark">
-                <input id="input" type="text">
+                <input id="input" type="text" oninput="fakeValidation(event)">
             </div>
             <button class="bg-call-to-action">Continue</button>
         </form>
