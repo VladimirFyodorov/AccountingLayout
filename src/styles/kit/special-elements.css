@@ -1,0 +1,11 @@
+.check-mark {
+  display: inline-block;
+
+  width: 5px;
+  height: 10px;
+
+  border-width: 0 2px 2px 0;
+  border-style: solid;
+  border-color: var(--color-main);
+  transform: rotate(45deg);
+}
