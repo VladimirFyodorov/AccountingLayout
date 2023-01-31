@@ -23,7 +23,7 @@ form.email-checked > div.for-check-mark::after {
   display: inline-block;
   width: 5px;
   height: 10px;
-  border-color: var(--color-main);
+  border-color: var(--color-ok);
   border-style: solid;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
