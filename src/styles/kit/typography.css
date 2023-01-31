@@ -2,6 +2,10 @@
   font-weight: bold;
 }
 
+.not-bold {
+  font-weight: normal;
+}
+
 .bold-underline {
   font-weight: bold;
   text-decoration: underline;

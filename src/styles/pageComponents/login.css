@@ -82,3 +82,23 @@ form.login > button {
     width: 100%;
   }
 }
+
+form.login > article {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 40px;
+}
+
+.user-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  width: 55px;
+  height: 55px;
+  margin-right: 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
