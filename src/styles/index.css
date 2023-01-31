@@ -1,2 +1,6 @@
 @import "./general.css";
+@import "./kit/variables.css";
 @import "./kit/typography.css";
+@import "./kit/colors.css";
+@import "./footer.css";
+@import "./pageComponents/login.css";

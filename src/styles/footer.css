@@ -1,0 +1,25 @@
+footer {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding-left: 8.33vw;
+}
+
+@media (max-width: 400px) {
+  footer {
+    flex-wrap: wrap;
+    padding: 0 5vw;
+  }
+}
+
+main.main-wo-header {
+  display: flex;
+  justify-content: flex-end;
+
+  box-sizing: border-box;
+
+  width: 100vw;
+  min-height: calc(100vh - 50px);
+
+  padding: 5vh 8.33vw 0;
+}
