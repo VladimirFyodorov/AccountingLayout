@@ -3,9 +3,8 @@
 
   width: 5px;
   height: 10px;
-
-  border-width: 0 2px 2px 0;
-  border-style: solid;
   border-color: var(--color-main);
+  border-style: solid;
+  border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
