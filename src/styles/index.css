@@ -4,5 +4,6 @@
 @import "./kit/colors.css";
 @import "./kit/special-elements.css";
 @import "./kit/positioning.css";
+@import "./header.css";
 @import "./footer.css";
 @import "./pageComponents/LoginPage/index.css";
