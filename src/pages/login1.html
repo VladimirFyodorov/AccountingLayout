@@ -7,15 +7,16 @@
     <link rel="icon" type="image/png" href="../images/logo.png"/>
     <link rel="stylesheet" href="../styles/index.css">
     <title>Accounting</title>
+    <script src="../../index.js"></script>
     <script>
         function fakeSubmit(e) {
             e.preventDefault();
-            window.location.href = '/AccountingLayout/src/pages/login2.html';
+            relocateTo('/src/pages/login2');
         };
 
         function fakeValidation(e) {
             e.target.closest('form').classList.add('email-checked');
-        }
+        };
     </script>
 </head>
 <body>
@@ -23,7 +24,7 @@
         <form class="login login-email" onsubmit="fakeSubmit(event)">
             <h1>Sign in</h1>
             <h2>Continue with email</h2>
-            <p>New user? <a class="link avoid-break" href="/AccountingLayout/src/pages/login3.html">Create an account</a></p>
+            <p>New user? <a class="link avoid-break" href="javascript:relocateTo('/src/pages/login3')">Create an account</a></p>
             <label class="interface" for="input">Email address</label>
             <div class="for-check-mark">
                 <input id="input" type="text" oninput="fakeValidation(event)">
