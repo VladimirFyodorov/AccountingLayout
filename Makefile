@@ -1,6 +1,6 @@
 lint:
-	npx stylelint "**/*.css"
+	npx stylelint "./src/styles/**/*.css"
 	npx htmlhint ./src/pages/*.html
 
 lint-fix:
-	npx stylelint "**/*.css" --fix
+	npx stylelint "./src/styles/**/*.css" --fix

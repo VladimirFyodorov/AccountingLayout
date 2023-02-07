@@ -1,0 +1,336 @@
+@font-face {
+  font-weight: 400;
+  font-family: PTSans;
+  src: url(983a32f60c185f37dab7.ttf);
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: PTSans;
+  src: url(adbe2c3130dc75b4f8e8.ttf);
+}
+
+html {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: PTSans, sans-serif;
+}
+
+body {
+  margin: 0;
+  color: var(--color-main);
+  font-size: 16px;
+  font-family: PTSans, sans-serif;
+  line-height: 1.295;
+}
+
+h1 {
+  margin: 0;
+  color: var(--color-heading);
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.295;
+}
+
+h2 {
+  margin: 0;
+  color: var(--color-heading);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.295;
+}
+
+h3 {
+  margin: 0;
+  color: var(--color-main);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.295;
+}
+
+main {
+  box-sizing: border-box;
+
+  width: 100vw;
+  min-height: calc(100vh - 131px);  /* header height 81 footer height 50 */
+}
+
+:root {
+  --color-main: #3a3a3a;
+  --color-heading: #0b0b0b;
+  --color-outline: #0b0b0b;
+  --color-interface: #717171;
+  --color-active-panel: #e7e7e7;
+  --color-hover: #f5f5f5;
+  --color-call-to-action: #318bde;
+  --color-active: #2a78c0;
+  --color-error: #dc6466;
+  --color-ok: #079d31;
+  --color-background: #fff;
+  --color-white: #fff;
+  --color-border: #dcdcdc;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.not-bold {
+  font-weight: normal;
+}
+
+.bold-underline {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.comments {
+  color: var(--color-interface);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.small-text {
+  font-size: 14px;
+}
+
+.interface {
+  color: var(--color-interface);
+  font-size: 14px;
+}
+
+a.link {
+  color: var(--color-call-to-action);
+  text-decoration: none;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+.avoid-break {
+  break-inside: avoid;
+}
+
+.bg-call-to-action {
+  color: white;
+  background-color: var(--color-call-to-action);
+}
+
+.color-interface {
+  color: var(--color-interface);
+}
+
+.check-mark {
+  display: inline-block;
+
+  width: 5px;
+  height: 10px;
+  border-color: var(--color-main);
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.grid-first-long {
+  grid-column: 2 / 11;
+}
+
+.grid-last-short {
+  grid-column: 11 / 12;
+}
+
+.m-b-0 {
+  margin-bottom: 0;
+}
+
+.m-b-20 {
+  margin-bottom: 20px;
+}
+
+.m-b-40 {
+  margin-bottom: 40px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding-left: 8.33vw;
+}
+
+@media (max-width: 400px) {
+  footer {
+    flex-wrap: wrap;
+    padding: 0 5vw;
+  }
+}
+
+main.main-wo-header {
+  display: flex;
+  justify-content: flex-end;
+
+  box-sizing: border-box;
+
+  width: 100vw;
+  min-height: calc(100vh - 50px);
+
+  padding: 5vh 8.33vw 0;
+}
+
+form.login {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+
+  box-sizing: border-box;
+
+  min-width: 35vw;
+  min-height: 70vh;
+  padding: 50px;
+  border-radius: 4px;
+  box-shadow: 2px 6px 20px 2px rgba(0 0 0 / 15%);
+}
+
+form.email-checked > div.for-check-mark {
+  position: relative;
+}
+
+form.email-checked > div.for-check-mark::after {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-block;
+  width: 5px;
+  height: 10px;
+  border-color: var(--color-ok);
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  content: "";
+}
+
+form.login > label {
+  display: block;
+}
+
+form.login input {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 30px;
+  border-color: var(--color-border);
+  border-width: 0 0 1px;
+  outline: none;
+}
+
+form.login input:focus {
+  border-color: var(--color-call-to-action);
+}
+
+form.login > button {
+  align-self: flex-end;
+
+  width: 200px;
+  height: 30px;
+  border-width: 0;
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  form.login {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    box-shadow: 0 0 0 0;
+  }
+
+  form.login > button {
+    width: 100%;
+  }
+}
+
+form.login-email > h1 {
+  margin: 0 0 20px;
+}
+
+form.login-email > h2 {
+  margin: 0;
+}
+
+form.login-email > p {
+  margin: 0 0 40px;
+}
+
+form.login-password > h1 {
+  margin-bottom: 30px;
+}
+
+form.login-password > article.user-data {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 40px;
+}
+
+form.login-password .user-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  width: 55px;
+  height: 55px;
+  margin-right: 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+form.create-user > h1 {
+  margin: 0;
+}
+
+form.create-user > h3:nth-of-type(1) {
+  margin-bottom: 30px;
+}
+
+form.create-user > h3:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+
+form.create-user > section.inputs-in-one-row {
+  display: flex;
+}
+
+form.create-user > section.inputs-in-one-row > div {
+  flex-grow: 1;
+}
+
+form.create-user > section.inputs-in-one-row > div:first-child {
+  margin-right: 35px;
+}
+
+@media (max-width: 400px) {
+  form.create-user input {
+    margin-bottom: 15px;
+  }
+
+  form.create-user > section.inputs-in-one-row {
+    display: block;
+  }
+
+  form.create-user > section.inputs-in-one-row > div:first-child {
+    margin-right: 0;
+  }
+}
+
+
+
+header{padding:15px 0 30px}header nav{display:grid;grid-template-columns:repeat(8, 1fr);align-items:center}header nav a{color:var(--color-main)}header nav a:hover{font-weight:bold;text-decoration:underline}header .menu{display:flex;justify-content:flex-start;column-gap:5px}header .menu .add-bill{display:flex;align-items:center;justify-content:center;box-sizing:border-box;width:50px;height:36px;border:2px solid var(--color-main);border-radius:8px;cursor:pointer}header .menu .add-bill:hover{background-color:var(--color-call-to-action);border-color:var(--color-call-to-action)}header .menu .add-bill:hover h3{color:var(--color-white)}header .menu .user{display:flex;align-items:center;justify-content:center;box-sizing:border-box;width:36px;height:36px;border:2px solid var(--color-main);border-radius:8px;cursor:pointer}header .menu .user:hover{background-color:var(--color-main)}header .menu .user:hover h3{color:var(--color-white)}
