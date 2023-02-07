@@ -1,9 +1,10 @@
-@import "./general.css";
+@import "./general.scss";
 @import "./kit/variables.css";
 @import "./kit/typography.css";
 @import "./kit/colors.css";
 @import "./kit/special-elements.css";
 @import "./kit/positioning.css";
+@import "./main.scss";
 @import "./header.scss";
-@import "./footer.css";
+@import "./footer.scss";
 @import "./pageComponents/LoginPage/index.css";

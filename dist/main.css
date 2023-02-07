@@ -1,60 +1,6 @@
-@font-face {
-  font-weight: 400;
-  font-family: PTSans;
-  src: url(983a32f60c185f37dab7.ttf);
-}
-
-@font-face {
-  font-weight: 700;
-  font-family: PTSans;
-  src: url(adbe2c3130dc75b4f8e8.ttf);
-}
-
-html {
-  font-weight: 400;
-  font-size: 16px;
-  font-family: PTSans, sans-serif;
-}
-
-body {
-  margin: 0;
-  color: var(--color-main);
-  font-size: 16px;
-  font-family: PTSans, sans-serif;
-  line-height: 1.295;
-}
-
-h1 {
-  margin: 0;
-  color: var(--color-heading);
-  font-weight: bold;
-  font-size: 42px;
-  line-height: 1.295;
-}
-
-h2 {
-  margin: 0;
-  color: var(--color-heading);
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.295;
-}
-
-h3 {
-  margin: 0;
-  color: var(--color-main);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.295;
-}
-
-main {
-  box-sizing: border-box;
-
-  width: 100vw;
-  min-height: calc(100vh - 131px);  /* header height 81 footer height 50 */
-}
-
+/*!********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/kit/variables.css ***!
+  \********************************************************************************/
 :root {
   --color-main: #3a3a3a;
   --color-heading: #0b0b0b;
@@ -71,6 +17,9 @@ main {
   --color-border: #dcdcdc;
 }
 
+/*!*********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/kit/typography.css ***!
+  \*********************************************************************************/
 .bold {
   font-weight: bold;
 }
@@ -113,6 +62,9 @@ a:active { text-decoration: none; }
   break-inside: avoid;
 }
 
+/*!*****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/kit/colors.css ***!
+  \*****************************************************************************/
 .bg-call-to-action {
   color: white;
   background-color: var(--color-call-to-action);
@@ -122,6 +74,9 @@ a:active { text-decoration: none; }
   color: var(--color-interface);
 }
 
+/*!***************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/kit/special-elements.css ***!
+  \***************************************************************************************/
 .check-mark {
   display: inline-block;
 
@@ -133,6 +88,9 @@ a:active { text-decoration: none; }
   transform: rotate(45deg);
 }
 
+/*!**********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/kit/positioning.css ***!
+  \**********************************************************************************/
 .grid-12 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -158,32 +116,9 @@ a:active { text-decoration: none; }
   margin-bottom: 40px;
 }
 
-footer {
-  display: flex;
-  align-items: center;
-  height: 50px;
-  padding-left: 8.33vw;
-}
-
-@media (max-width: 400px) {
-  footer {
-    flex-wrap: wrap;
-    padding: 0 5vw;
-  }
-}
-
-main.main-wo-header {
-  display: flex;
-  justify-content: flex-end;
-
-  box-sizing: border-box;
-
-  width: 100vw;
-  min-height: calc(100vh - 50px);
-
-  padding: 5vh 8.33vw 0;
-}
-
+/*!***************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/pageComponents/LoginPage/general.css ***!
+  \***************************************************************************************************/
 form.login {
   display: flex;
   flex-direction: column;
@@ -257,6 +192,9 @@ form.login > button {
   }
 }
 
+/*!*****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/pageComponents/LoginPage/EmailForm.css ***!
+  \*****************************************************************************************************/
 form.login-email > h1 {
   margin: 0 0 20px;
 }
@@ -269,6 +207,9 @@ form.login-email > p {
   margin: 0 0 40px;
 }
 
+/*!********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/pageComponents/LoginPage/PasswordForm.css ***!
+  \********************************************************************************************************/
 form.login-password > h1 {
   margin-bottom: 30px;
 }
@@ -293,6 +234,9 @@ form.login-password .user-circle {
   border-radius: 50%;
 }
 
+/*!**********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/pageComponents/LoginPage/CreateUserForm.css ***!
+  \**********************************************************************************************************/
 form.create-user > h1 {
   margin: 0;
 }
@@ -331,6 +275,226 @@ form.create-user > section.inputs-in-one-row > div:first-child {
   }
 }
 
+/*!*************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/pageComponents/LoginPage/index.css ***!
+  \*************************************************************************************************/
 
 
-header{padding:15px 0 30px}header nav{display:grid;grid-template-columns:repeat(8, 1fr);align-items:center}header nav a{color:var(--color-main)}header nav a:hover{font-weight:bold;text-decoration:underline}header .menu{display:flex;justify-content:flex-start;column-gap:5px}header .menu .add-bill{display:flex;align-items:center;justify-content:center;box-sizing:border-box;width:50px;height:36px;border:2px solid var(--color-main);border-radius:8px;cursor:pointer}header .menu .add-bill:hover{background-color:var(--color-call-to-action);border-color:var(--color-call-to-action)}header .menu .add-bill:hover h3{color:var(--color-white)}header .menu .user{display:flex;align-items:center;justify-content:center;box-sizing:border-box;width:36px;height:36px;border:2px solid var(--color-main);border-radius:8px;cursor:pointer}header .menu .user:hover{background-color:var(--color-main)}header .menu .user:hover h3{color:var(--color-white)}
+/*!****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/index.scss ***!
+  \****************************************************************************************************************/
+@font-face {
+  font-weight: 400;
+  font-family: PTSans;
+  src: url(983a32f60c185f37dab7.ttf);
+}
+@font-face {
+  font-weight: 700;
+  font-family: PTSans;
+  src: url(adbe2c3130dc75b4f8e8.ttf);
+}
+html {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: PTSans, sans-serif;
+}
+
+body {
+  margin: 0;
+  color: var(--color-main);
+  font-size: 16px;
+  font-family: PTSans, sans-serif;
+  line-height: 1.295;
+}
+
+h1 {
+  margin: 0;
+  color: var(--color-heading);
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.295;
+}
+
+h2 {
+  margin: 0;
+  color: var(--color-heading);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.295;
+}
+
+h3 {
+  margin: 0;
+  color: var(--color-main);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.295;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  box-sizing: border-box;
+  width: 100vw;
+  padding-top: 5vh;
+}
+main.main-login {
+  min-height: calc(100vh - 50px); /* footer height 50 */
+}
+main.main-login form {
+  grid-column: 7/span 5;
+  min-width: 400px;
+}
+@media (max-width: 400px) {
+  main.main-login {
+    display: block;
+    padding: 5vh 5vw;
+  }
+  main.main-login form {
+    min-width: 0;
+  }
+}
+main.main-w-header {
+  min-height: calc(100vh - 131px); /* header height 81 + footer height 50 */
+}
+@media (max-width: 400px) {
+  main.main-w-header {
+    padding-left: 20px;
+    min-height: calc(100vh - 50px); /* no header (header is aside) + footer height 50 */
+  }
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 15px 0 30px;
+}
+header nav {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center;
+  column-gap: 20px;
+}
+header nav a {
+  color: var(--color-main);
+}
+header nav a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+header .menu {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 5px;
+}
+header .menu .add-bill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 50px;
+  height: 36px;
+  border: 2px solid var(--color-main);
+  border-radius: 8px;
+  cursor: pointer;
+}
+header .menu .add-bill:hover {
+  background-color: var(--color-call-to-action);
+  border-color: var(--color-call-to-action);
+}
+header .menu .add-bill:hover h3 {
+  color: var(--color-white);
+}
+header .menu .user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 36px;
+  height: 36px;
+  border: 2px solid var(--color-main);
+  border-radius: 8px;
+  cursor: pointer;
+}
+header .menu .user:hover {
+  background-color: var(--color-main);
+}
+header .menu .user:hover h3 {
+  color: var(--color-white);
+}
+
+#show-header {
+  display: none;
+}
+
+#show-header-label {
+  display: none;
+}
+
+@media (max-width: 400px) {
+  #show-header-label {
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    top: 5px;
+    left: -2px;
+    width: 20px;
+    height: 24px;
+    background: url("https://img.icons8.com/material-rounded/24/null/menu-2.png") no-repeat;
+  }
+  header {
+    position: absolute;
+    height: 100vh;
+    width: 20px;
+    background-color: var(--color-active-panel);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    gap: 50px;
+    padding: 50px 10px 0;
+    box-sizing: border-box;
+  }
+  header nav {
+    display: none;
+  }
+  header .menu {
+    display: none;
+  }
+  #show-header:checked ~ header {
+    width: 150px;
+  }
+  #show-header:checked ~ header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  #show-header:checked ~ header .menu {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: stretch;
+    gap: 10px;
+  }
+  #show-header:checked ~ header .menu .add-bill {
+    width: 100%;
+  }
+  #show-header:checked ~ header .menu .user {
+    width: 100%;
+  }
+}
+footer {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding-left: 8.33vw;
+  box-sizing: margin-box;
+}
+@media (max-width: 400px) {
+  footer {
+    flex-wrap: wrap;
+    padding: 0 5vw;
+    margin-left: 20px;
+  }
+}
