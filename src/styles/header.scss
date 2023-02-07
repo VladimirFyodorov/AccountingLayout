@@ -1,0 +1,65 @@
+header {
+  padding: 15px 0 30px;
+
+  nav {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+
+    a {
+      color: var(--color-main);
+
+      &:hover {
+        font-weight: bold;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .menu {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 5px;
+
+    .add-bill {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      width: 50px;
+      height: 36px;
+      border: 2px solid var(--color-main);
+      border-radius: 8px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--color-call-to-action);
+        border-color: var(--color-call-to-action);
+
+        h3 {
+          color: var(--color-white);
+        }
+      }
+    }
+
+    .user {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      width: 36px;
+      height: 36px;
+      border: 2px solid var(--color-main);
+      border-radius: 8px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--color-main);
+
+        h3 {
+          color: var(--color-white);
+        }
+      }
+    }
+  }
+}
