@@ -1,14 +1,11 @@
 footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
   align-items: center;
   height: 50px;
-  padding-left: 8.33vw;
   box-sizing: margin-box;
 
-  @media (max-width: 400px) {
-    flex-wrap: wrap;
-    padding: 0 5vw;
-
-    margin-left: 20px;
+  p {
+    grid-column: 2 /span 10;
   }
 }

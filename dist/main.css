@@ -336,7 +336,6 @@ main {
   grid-template-columns: repeat(12, 1fr);
   box-sizing: border-box;
   width: 100vw;
-  padding-top: 5vh;
 }
 main.main-login {
   min-height: calc(100vh - 50px); /* footer height 50 */
@@ -356,12 +355,6 @@ main.main-login form {
 }
 main.main-w-header {
   min-height: calc(100vh - 131px); /* header height 81 + footer height 50 */
-}
-@media (max-width: 400px) {
-  main.main-w-header {
-    padding-left: 20px;
-    min-height: calc(100vh - 50px); /* no header (header is aside) + footer height 50 */
-  }
 }
 
 header {
@@ -423,78 +416,13 @@ header .menu .user:hover h3 {
   color: var(--color-white);
 }
 
-#show-header {
-  display: none;
-}
-
-#show-header-label {
-  display: none;
-}
-
-@media (max-width: 400px) {
-  #show-header-label {
-    display: inline-block;
-    position: absolute;
-    z-index: 2;
-    top: 5px;
-    left: -2px;
-    width: 20px;
-    height: 24px;
-    background: url("https://img.icons8.com/material-rounded/24/null/menu-2.png") no-repeat;
-  }
-  header {
-    position: absolute;
-    height: 100vh;
-    width: 20px;
-    background-color: var(--color-active-panel);
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-end;
-    gap: 50px;
-    padding: 50px 10px 0;
-    box-sizing: border-box;
-  }
-  header nav {
-    display: none;
-  }
-  header .menu {
-    display: none;
-  }
-  #show-header:checked ~ header {
-    width: 150px;
-  }
-  #show-header:checked ~ header nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 20px;
-  }
-  #show-header:checked ~ header .menu {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-end;
-    align-items: stretch;
-    gap: 10px;
-  }
-  #show-header:checked ~ header .menu .add-bill {
-    width: 100%;
-  }
-  #show-header:checked ~ header .menu .user {
-    width: 100%;
-  }
-}
 footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
   align-items: center;
   height: 50px;
-  padding-left: 8.33vw;
   box-sizing: margin-box;
 }
-@media (max-width: 400px) {
-  footer {
-    flex-wrap: wrap;
-    padding: 0 5vw;
-    margin-left: 20px;
-  }
+footer p {
+  grid-column: 2/span 10;
 }

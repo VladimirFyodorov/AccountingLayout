@@ -5,8 +5,7 @@ main {
   box-sizing: border-box;
 
   width: 100vw;
-  padding-top: 5vh;
-
+  
   &.main-login {
     min-height: calc(100vh - 50px); /* footer height 50 */
 
@@ -27,11 +26,6 @@ main {
 
   &.main-w-header {
     min-height: calc(100vh - 131px); /* header height 81 + footer height 50 */
-
-    @media (max-width: 400px) {
-      padding-left: 20px;
-      min-height: calc(100vh - 50px);  /* no header (header is aside) + footer height 50 */
-    }
   }
 }
 
