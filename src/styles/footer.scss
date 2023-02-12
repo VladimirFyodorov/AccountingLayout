@@ -2,8 +2,8 @@ footer {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
-  height: 50px;
   box-sizing: margin-box;
+  height: 50px;
 
   p {
     grid-column: 2 /span 10;
