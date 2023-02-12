@@ -11,17 +11,12 @@ main {
 
     form {
       grid-column: 7 / span 5;
-      min-width: 400px;
       margin-top: 5vh;
     }
 
-    @media (max-width: 400px) {
+    @media (max-width: 450px) {
       display: block;
       padding: 5vh 5vw;
-
-      form {
-        min-width: 0;
-      }
     }
   }
 

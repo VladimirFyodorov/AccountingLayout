@@ -116,170 +116,6 @@ a:active { text-decoration: none; }
   margin-bottom: 40px;
 }
 
-/*!***************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/pageComponents/LoginPage/general.css ***!
-  \***************************************************************************************************/
-form.login {
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-
-  box-sizing: border-box;
-
-  min-width: 35vw;
-  min-height: 70vh;
-  padding: 50px;
-  border-radius: 4px;
-  box-shadow: 2px 6px 20px 2px rgba(0 0 0 / 15%);
-}
-
-form.email-checked > div.for-check-mark {
-  position: relative;
-}
-
-form.email-checked > div.for-check-mark::after {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  display: inline-block;
-  width: 5px;
-  height: 10px;
-  border-color: var(--color-ok);
-  border-style: solid;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
-  content: "";
-}
-
-form.login > label {
-  display: block;
-}
-
-form.login input {
-  width: 100%;
-  height: 30px;
-  margin-bottom: 30px;
-  border-color: var(--color-border);
-  border-width: 0 0 1px;
-  outline: none;
-}
-
-form.login input:focus {
-  border-color: var(--color-call-to-action);
-}
-
-form.login > button {
-  align-self: flex-end;
-
-  width: 200px;
-  height: 30px;
-  border-width: 0;
-  border-radius: 6px;
-
-  cursor: pointer;
-}
-
-@media (max-width: 400px) {
-  form.login {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    box-shadow: 0 0 0 0;
-  }
-
-  form.login > button {
-    width: 100%;
-  }
-}
-
-/*!*****************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/pageComponents/LoginPage/EmailForm.css ***!
-  \*****************************************************************************************************/
-form.login-email > h1 {
-  margin: 0 0 20px;
-}
-
-form.login-email > h2 {
-  margin: 0;
-}
-
-form.login-email > p {
-  margin: 0 0 40px;
-}
-
-/*!********************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/pageComponents/LoginPage/PasswordForm.css ***!
-  \********************************************************************************************************/
-form.login-password > h1 {
-  margin-bottom: 30px;
-}
-
-form.login-password > article.user-data {
-  display: flex;
-  align-items: center;
-
-  margin-bottom: 40px;
-}
-
-form.login-password .user-circle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  box-sizing: border-box;
-  width: 55px;
-  height: 55px;
-  margin-right: 10px;
-  border: 1px solid black;
-  border-radius: 50%;
-}
-
-/*!**********************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/pageComponents/LoginPage/CreateUserForm.css ***!
-  \**********************************************************************************************************/
-form.create-user > h1 {
-  margin: 0;
-}
-
-form.create-user > h3:nth-of-type(1) {
-  margin-bottom: 30px;
-}
-
-form.create-user > h3:nth-of-type(2) {
-  margin-bottom: 20px;
-}
-
-form.create-user > section.inputs-in-one-row {
-  display: flex;
-}
-
-form.create-user > section.inputs-in-one-row > div {
-  flex-grow: 1;
-}
-
-form.create-user > section.inputs-in-one-row > div:first-child {
-  margin-right: 35px;
-}
-
-@media (max-width: 400px) {
-  form.create-user input {
-    margin-bottom: 15px;
-  }
-
-  form.create-user > section.inputs-in-one-row {
-    display: block;
-  }
-
-  form.create-user > section.inputs-in-one-row > div:first-child {
-    margin-right: 0;
-  }
-}
-
-/*!*************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/pageComponents/LoginPage/index.css ***!
-  \*************************************************************************************************/
-
-
 /*!****************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/index.scss ***!
   \****************************************************************************************************************/
@@ -342,16 +178,12 @@ main.main-login {
 }
 main.main-login form {
   grid-column: 7/span 5;
-  min-width: 400px;
   margin-top: 5vh;
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   main.main-login {
     display: block;
     padding: 5vh 5vw;
-  }
-  main.main-login form {
-    min-width: 0;
   }
 }
 main.main-w-header {
@@ -426,4 +258,174 @@ footer {
 }
 footer p {
   grid-column: 2/span 10;
+}
+
+form.login {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  box-sizing: border-box;
+  min-width: 450px;
+  min-height: 70vh;
+  padding: 50px;
+  border-radius: 4px;
+  box-shadow: 2px 6px 20px 2px rgba(0, 0, 0, 0.15);
+}
+form.login label {
+  display: block;
+}
+form.login input {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 30px;
+  border-color: var(--color-border);
+  border-width: 0 0 1px;
+  outline: none;
+}
+form.login input:focus {
+  border-color: var(--color-call-to-action);
+}
+form.login button {
+  align-self: flex-end;
+  width: 200px;
+  height: 30px;
+  border-width: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+@media (max-width: 450px) {
+  form.login {
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    padding: 0;
+    box-shadow: 0 0 0 0;
+  }
+  form.login button {
+    width: 100%;
+  }
+}
+
+form.email-checked div.for-check-mark {
+  position: relative;
+}
+form.email-checked div.for-check-mark::after {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-block;
+  width: 5px;
+  height: 10px;
+  border-color: var(--color-ok);
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  content: "";
+}
+
+form.login-email h1 {
+  margin: 0 0 20px;
+}
+form.login-email h2 {
+  margin: 0;
+}
+form.login-email p {
+  margin: 0 0 40px;
+}
+
+form.login-password > h1 {
+  margin-bottom: 30px;
+}
+
+form.login-password > article.user-data {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+form.login-password .user-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 55px;
+  height: 55px;
+  margin-right: 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+form.create-user > h1 {
+  margin: 0;
+}
+
+form.create-user > h3:nth-of-type(1) {
+  margin-bottom: 30px;
+}
+
+form.create-user > h3:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+
+form.create-user > section.inputs-in-one-row {
+  display: flex;
+}
+
+form.create-user > section.inputs-in-one-row > div {
+  flex-grow: 1;
+}
+
+form.create-user > section.inputs-in-one-row > div:first-child {
+  margin-right: 35px;
+}
+
+@media (max-width: 400px) {
+  form.create-user input {
+    margin-bottom: 15px;
+  }
+  form.create-user > section.inputs-in-one-row {
+    display: block;
+  }
+  form.create-user > section.inputs-in-one-row > div:first-child {
+    margin-right: 0;
+  }
+}
+form.validate-email {
+  min-width: 500px;
+}
+form.validate-email h1 {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+form.validate-email div.inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+form.validate-email div.inputs input {
+  width: 55px;
+  height: 85px;
+  margin: 0;
+  border: 2px solid var(--color-active-panel);
+  border-radius: 5px;
+  font-size: 35px;
+  color: var(--color-main);
+  text-align: center;
+}
+form.validate-email div.btns {
+  display: flex;
+  justify-content: flex-end;
+}
+form.validate-email div.btns button {
+  width: 100px;
+  min-width: 0;
+  height: 30px;
+  background-color: var(--color-white);
+}
+form.validate-email div.btns button:hover {
+  background-color: var(--color-hover);
+}
+form.validate-email div.btns button p {
+  margin: 0;
 }

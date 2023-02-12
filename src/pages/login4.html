@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../images/logo.png"/>
+    <link rel="stylesheet" href="../../dist/main.css">
+    <title>Accounting</title>
+    <script src="../js/helpers.js"></script>
+    <script defer>
+        function fakeSubmit(e) {
+            e.preventDefault();
+            relocateTo('/src/pages/home1');
+        }
+
+        function onInput(e) {
+            const inputs = document.querySelectorAll('input');
+            const index = [...inputs].indexOf(e.target);
+            if (index < inputs.length - 1) {
+                inputs[index + 1].focus();
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('div.inputs').childNodes.forEach(node => {
+                node.addEventListener('input', onInput);
+            });
+        });
+    </script>
+</head>
+<body>
+    <main class="main-login">
+        <form class="login validate-email" onsubmit="fakeSubmit(event)">
+            <h1>Update your password</h1>
+            <h3>Enter the code we just sent to</h3>
+            <h3 class="bold">ulianova.sofia@gmail.com</h3>
+            <div class="inputs"><input><input><input><input><input><input></div>
+            <div class="btns">
+                <button><p class="interface">Back</p></button>
+                <button><p class="interface">Resend code</p></button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p class="comments">Если сайт не работает, звоните Владимиру: +7 985 4552465</p>
+    </footer>
+</body>
+</html>
